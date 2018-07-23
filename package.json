@@ -1,5 +1,9 @@
 {
-  "private": true,
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "private": false,
   "name": "preact-lazy-blur",
   "version": "0.0.0",
   "license": "MIT",
@@ -8,22 +12,38 @@
     "build": "preact build",
     "serve": "preact build && preact serve",
     "dev": "preact watch",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "prepublish": "rollup -c && uglifyjs dist/index.js --output dist/index.js --compress --mangle"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
   },
   "eslintIgnore": [
-    "build/*"
+    "build/*",
+    "dist/*"
   ],
   "devDependencies": {
     "eslint": "^4.5.0",
     "eslint-config-synacor": "^1.1.0",
     "if-env": "^1.0.0",
-    "preact-cli": "^2.0.0"
+    "preact-cli": "^2.0.0",
+    "rollup": "^0.63.4",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-uglify": "^4.0.0"
   },
   "dependencies": {
     "preact": "^8.2.1",
-    "preact-compat": "^3.17.0"
-  }
+    "preact-waypoint": "^1.0.7"
+  },
+  "description": "A copy of npm.im/react-lazy-blur that uses preact",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisBrownie55/preact-lazy-blur.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/ChrisBrownie55/preact-lazy-blur/issues"
+  },
+  "homepage": "https://github.com/ChrisBrownie55/preact-lazy-blur#readme"
 }
