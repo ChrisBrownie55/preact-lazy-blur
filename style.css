@@ -15,13 +15,13 @@ body {
 }
 
 .react-lazy-blur,
-.react-lazy-blur .background,
+.react-lazy-blur .image,
 .react-lazy-blur .blur{
 	min-width: 100vw;
 	min-height: 100vh;
 }
 
-.react-lazy-blur .background,
+.react-lazy-blur .image,
 .react-lazy-blur .blur {
 	background-position: center center;
 	background-size: cover;
