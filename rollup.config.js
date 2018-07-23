@@ -13,7 +13,7 @@ export default {
       transforms: {
         modules: false
       },
-      objectAssign: 'Object.assign',
+      objectAssign: 'Object.assign'
     }),
     uglify()
   ]
