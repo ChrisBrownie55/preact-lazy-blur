@@ -8,6 +8,7 @@ body {
 
 .react-lazy-blur {
 	position: relative;
+	height: 100vh;
 }
 
 .react-lazy-blur:hover > .link-container {
